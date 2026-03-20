@@ -32,7 +32,7 @@ public class SpringKafkaConfig {
 
 	@Bean
 	public Queue studentQueue() {
-		return new Queue(ApplicationConstant.STUDENT_QUEUE, true);
+		return new Queue("student.queue", true);
 	}
 
 	@Bean
